@@ -1,0 +1,10 @@
+.sideBarOption{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: normal;
+}
+.icon{
+    padding:20px;
+    font-size: 25px;
+}
