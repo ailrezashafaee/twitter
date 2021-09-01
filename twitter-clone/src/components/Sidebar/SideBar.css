@@ -1,5 +1,39 @@
 .sideBar{
     flex: 0.22;
-    
     border-right: 1px solid var(--twitter-background);
+}
+.twitterIcon{
+    font-size: 28px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    margin-top: 8px;
+    color : #1D9BF0;
+}
+.sidebarBtn
+{
+    background-color: #1D9BF0 !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 800 !important;
+    text-transform: inherit !important;
+    border-radius: 30px !important;
+    height: 50px !important;
+    margin-top: 15px !important;
+    margin-right: 15px !important;
+    width:230px !important;
+    padding: 27px 0px !important;
+}
+.sidebarBtnContainer
+{
+    text-align: left;
+}
+.sidebarBtn:hover{
+    background-color: #1A8CD8 !important;
+}
+@media screen and (max-width:1300px)
+{
+ .sideBar{
+     flex:0.1;
+     width: 0px;
+ }   
 }

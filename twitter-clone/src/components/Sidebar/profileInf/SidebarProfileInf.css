@@ -1,0 +1,38 @@
+.sidebarPcontainer{
+    position: absolute;
+    bottom: 8px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 0px;
+    align-content: center;
+    border-radius: 30px;
+    padding: 7px 10px; 
+}
+.sidebarPcontainer:hover{
+    background-color: #E9EAEA;
+    
+}
+.sidebarInf{
+    display: flex;
+    align-items: center;
+}
+.sidebarInf h4{
+    font-size: 15px;
+}
+.sidebarInf img{
+    max-width: 40px;    
+    height: 40px;
+    border-radius: 50%;
+    display: block;
+    
+}
+.sidebarInf div{
+    margin-left: 7px;
+}
+.sidebarmore{
+    text-align: right;
+    font-size:30px;
+}
+
