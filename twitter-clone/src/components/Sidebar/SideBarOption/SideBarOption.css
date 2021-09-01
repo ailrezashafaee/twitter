@@ -23,3 +23,19 @@
     color:#0F1419 ;
     transition: background-color 100ms ease-out;
   }
+@media screen and (max-width:1300px)
+{
+    .sideBarOption > p{
+        display: none;
+    }
+    .sideBarOption{
+        display: block;
+        text-align: center;     
+        margin: 0;
+        width: auto;
+    }
+    .icon{
+        margin: 0;
+        
+    }
+}

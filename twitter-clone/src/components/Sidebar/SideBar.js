@@ -6,7 +6,9 @@ import {BsHash ,BsBookmark , BsPerson} from 'react-icons/bs';
 import { IoNotificationsOutline } from "react-icons/io5";
 import {FaTwitter , FaRegEnvelope} from 'react-icons/fa';
 import {RiFileList2Line} from 'react-icons/ri';
+import { Button } from "@material-ui/core";
 import {CgMoreO} from 'react-icons/cg';
+import SidebarProfileInf from './profileInf/SidebarProfileInf';
 function SideBar() {
     return (
         <div className="sideBar">
@@ -19,6 +21,10 @@ function SideBar() {
             <SideBarOption Icon={RiFileList2Line} text="Lists"/>
             <SideBarOption Icon={BsPerson} text="Profile"/>
             <SideBarOption Icon={CgMoreO} text="More"/>
+            <div className="sidebarBtnContainer">   
+                <Button variant="outlined" className="sidebarBtn">Tweet</Button>
+            </div>
+            <SidebarProfileInf src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" name="alireza shafaee" username="alireza"/>
         </div>
     )
 }
