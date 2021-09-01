@@ -1,0 +1,23 @@
+.feed{
+    flex: 0.48;
+    border-right: 1px solid var(--twitter-background);
+}
+
+.feed__header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right:20px;
+    padding-bottom: 2px;;
+    border-bottom: 1px solid var(--twitter-background);
+
+}
+.feed__header > h2 {
+    font-weight: 620;
+    font-size: 20px;
+}
+.wistars{
+    font-size:30px;
+}

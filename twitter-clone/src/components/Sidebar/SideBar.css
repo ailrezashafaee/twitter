@@ -1,0 +1,5 @@
+.sideBar{
+    flex: 0.22;
+    
+    border-right: 1px solid var(--twitter-background);
+}
