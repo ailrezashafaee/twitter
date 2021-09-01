@@ -4,7 +4,7 @@ function SideBarOption({text , Icon}) {
     return (
         <div className="sideBarOption">
             <Icon className="icon"/>
-            <p>{text}</p>            
+            <p>{text}</p>          
         </div>
     )
 }

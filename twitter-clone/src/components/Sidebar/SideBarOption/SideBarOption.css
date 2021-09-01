@@ -1,10 +1,10 @@
 .sideBarOption{
     display: flex;
-    width: auto;
     align-items: center;
     cursor: pointer;
     font-weight: normal;
     font-size: 22px;
+    margin-right: 40px;
 }
 .icon{
     padding-right:20px;
@@ -15,10 +15,11 @@
 }
 .sideBarOption > p{
     margin-right: 20px;
+    display: block;
 }
 .sideBarOption:hover {
     background-color: #E7E7E8;
     border-radius: 30px;
     color:#0F1419 ;
-    transition: color 100ms ease-out;
+    transition: background-color 100ms ease-out;
   }

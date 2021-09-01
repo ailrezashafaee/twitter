@@ -10,7 +10,7 @@ import {CgMoreO} from 'react-icons/cg';
 function SideBar() {
     return (
         <div className="sideBar">
-            <SideBarOption Icon={FaTwitter}/>
+            <FaTwitter className="twitterIcon"/>
             <SideBarOption Icon={AiFillHome} text="Home"/>
             <SideBarOption Icon={BsHash} text="Explore"/>
             <SideBarOption Icon={IoNotificationsOutline} text="Notification"/>
