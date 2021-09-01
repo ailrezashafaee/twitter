@@ -28,6 +28,7 @@
     border-radius: 20px;
     padding-left:10px;
     padding-right:10px;
+    padding-bottom: 10px;
 }
 
 .widget__container > h2 {
@@ -35,4 +36,11 @@
     margin-top:10px;
     padding-top:20px;
     padding-left:15px;
+}
+
+.widget__container2 {
+    background-color: var(--twitter-background);
+    margin-top:20px;
+    border-radius: 20px;
+    padding:13px;
 }
