@@ -10,3 +10,40 @@ body{
     margin-right: auto;
     padding-top: 5px;
 }
+@media screen and (max-width:1300px)
+{
+ .sideBar{
+     flex: 8.5 !important;
+ }   
+ .feed{
+     flex: 81.5 !important;
+ }
+ .widget{
+     flex:10 !important;
+ }
+ .sidebarPcontainer{
+     display: block !important;
+     margin: 0px auto !important;
+     width: 50px !important;
+     padding : 4px 0px !important;
+ }
+ .avatar{
+     margin: 0px  auto !important;
+     padding: 0px !important;
+ }
+ .sidebarBtnContainer{
+    width :0px !important;
+    padding: 0px !important;
+    display: none !important;
+ }
+ .sidebarmore{
+    padding: 0px !important;
+    margin: 0px !important;
+     display: none !important;
+ }
+ .inf{
+     padding: 0px !important;
+    margin: 0px !important;
+     display: none !important;
+ }
+}

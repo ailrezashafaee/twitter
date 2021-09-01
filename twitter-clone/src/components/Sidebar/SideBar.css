@@ -30,10 +30,3 @@
 .sidebarBtn:hover{
     background-color: #1A8CD8 !important;
 }
-@media screen and (max-width:1300px)
-{
- .sideBar{
-     flex:0.1;
-     width: 0px;
- }   
-}

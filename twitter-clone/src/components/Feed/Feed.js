@@ -10,6 +10,7 @@ function Feed() {
                 <WiStars className="wistars"/>
             </div>
             <Tweetbox/>
+
         </div>
     )
 }
