@@ -4,15 +4,16 @@
     border-bottom: 1px solid var(--twitter-background);
     padding-bottom: 10px;
   }
+  .post:hover{
+    background-color: var(--post-color);
+    transition: background-color 0.3s ease-out ;
+  }
   
   .post__body {
     flex: 1;
     padding: 10px;
   }
   
-  .post__body > img {
-    border-radius: 20px;
-  }
   
   .post__footer {
     display: flex;
@@ -43,4 +44,15 @@
   
   .post__avatar {
     padding: 20px;
+  }
+  .postImage{
+    position: relative;
+    max-width: 480px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .postImage img{
+    width: 100%;
+    height: auto;
   }
