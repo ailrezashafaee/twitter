@@ -1,9 +1,18 @@
-import React from 'react'
-import './Feed.css'
+import React, { useState, useEffect } from "react";
+import './Feed.css';
+import db from "../../firebase";
 import Tweetbox from './Tweetbox'
 import {WiStars} from 'react-icons/wi';
 import Post from './Post/Post';
+import FlipMove from "react-flip-move";
 function Feed() {
+    const [posts, setPosts] = useState([]);
+
+    useEffect(() => {
+      db.collection("posts").onSnapshot((snapshot) =>
+        setPosts(snapshot.docs.map((doc) => doc.data()))
+      );
+    }, []);
     return (
         <div className="feed">
             <div className="feed__header">
@@ -11,12 +20,19 @@ function Feed() {
                 <WiStars className="wistars"/>
             </div>
             <Tweetbox/>
-            <Post displayName="Cristiano Ronaldo" 
-            username="Cristiano" 
-            text="i want to have sex tonight with jorgina"
-            avatar="https://pbs.twimg.com/profile_images/1157313327867092993/a09TxL_1_400x400.jpg"
-            verified
-            image="https://pbs.twimg.com/media/E6LaZ7PXsAIss3M?format=jpg&name=medium"/>
+            <FlipMove>
+                {posts.map((post) => (
+                    <Post
+                    key={post.text}
+                    displayName={post.displayName}
+                    username={post.username}
+                    verified={post.verified}
+                    text={post.text}
+                    avatar={post.avatar}
+                    image={post.image}
+                />
+                ))}
+            </FlipMove>  
         </div>
     )
 }
