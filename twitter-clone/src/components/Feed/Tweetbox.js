@@ -1,11 +1,26 @@
 import React , {useState} from 'react';
 import './Tweetbox.css';
+import db from "../../firebase";
 import { Avatar, Button } from "@material-ui/core";
 function Tweetbox() {
     const[tweetMessage , setTweetMessage] = useState("");
     const[tweetImage , setTweetImage] = useState("");
+const sendTweet = (e) => {
+    e.preventDefault();
 
+    db.collection("posts").add({
+      displayName: "Cristiano Ronaldo",
+      username: "Cristiano",
+      verified: true,
+      text: tweetMessage,
+      image: tweetImage,
+      avatar:
+        "https://pbs.twimg.com/profile_images/1157313327867092993/a09TxL_1_400x400.jpg",
+    });
 
+    setTweetMessage("");
+    setTweetImage("");
+  };
     return (
         <form className="tweetbox">
             <div className="tweetbox__input">
@@ -18,11 +33,11 @@ function Tweetbox() {
                 <input value={tweetImage}
                 onChange = { (e) => setTweetImage(e.target.value) }
                 type="text" placeholder="Optional : Enter the link of pic/gif"/>
-                <Button>Tweet</Button>
+                <Button onClick={sendTweet}>Tweet</Button>
             </div>
 
         </form>
     )
-}
+}   
 
 export default Tweetbox;
