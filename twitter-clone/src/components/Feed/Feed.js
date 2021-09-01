@@ -9,7 +9,6 @@ function Feed() {
                 <h2>Home</h2>
                 <WiStars className="wistars"/>
             </div>
-            <h1>feed</h1>
             <Tweetbox/>
         </div>
     )
