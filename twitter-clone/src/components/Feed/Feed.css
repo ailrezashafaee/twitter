@@ -1,8 +1,15 @@
 .feed{
     flex: 0.48;
     border-right: 1px solid var(--twitter-background);
+    overflow-y: scroll;                                                                                                     
 }
-
+.feed::-webkit-scrollbar {
+    display: none;
+  }
+  .feed {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+  }
 .feed__header {
     height: 50px;
     display: flex;
