@@ -1,6 +1,7 @@
 .sideBar{
     flex: 0.22;
     border-right: 1px solid var(--twitter-background);
+    font-family: 'Quicksand', sans-serif;
 }
 .twitterIcon{
     font-size: 28px;

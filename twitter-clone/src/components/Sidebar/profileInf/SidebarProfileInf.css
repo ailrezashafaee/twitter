@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 30px;
     align-content: center;
     border-radius: 30px;
     padding: 10px ; 
@@ -30,6 +30,8 @@
 }
 .sidebarmore{
     text-align: right;
+    margin-top: 5px;
+    align-self: center;
     font-size:30px;
 }
 
