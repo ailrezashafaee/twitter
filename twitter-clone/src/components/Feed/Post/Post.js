@@ -5,10 +5,11 @@ import VerifiedUserIcon from "@material-ui/icons/VerifiedUser";
 import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
 import RepeatIcon from "@material-ui/icons/Repeat";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+import FavoriteIcon from '@material-ui/icons/Favorite';
 import PublishIcon from "@material-ui/icons/Publish";
 
 const Post = forwardRef(
-  ({ displayName, username, verified, text, image, avatar }, ref) => {
+  ({ post,displayName, username, verified, text, image, avatar , likes , islike }, ref) => {
     return (
       <div className="post" ref={ref}>
         <div className="post__avatar">
@@ -33,10 +34,20 @@ const Post = forwardRef(
             <img src={image}  alt="" />
           </div>
           <div className="post__footer">
-            <ChatBubbleOutlineIcon fontSize="small" />
-            <RepeatIcon fontSize="small" />
-            <FavoriteBorderIcon fontSize="small" />
-            <PublishIcon fontSize="small" />
+            <div> 
+              <ChatBubbleOutlineIcon fontSize="small" />
+            </div>
+            <div>
+              <RepeatIcon fontSize="small" />
+            </div>
+            <div className="likes">    
+              {islike ? <FavoriteIcon className="heart" fontSize="small" /> :
+               <FavoriteBorderIcon className="heart" fontSize="small" />}
+             <p className="numberOfLikes"></p>
+            </div>
+            <div>
+              <PublishIcon fontSize="small" />
+            </div>
           </div>
         </div>
       </div>

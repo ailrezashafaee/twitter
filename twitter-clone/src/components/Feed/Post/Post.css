@@ -59,3 +59,24 @@
   .dis{
     height: auto !important;
   }
+  .likes{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  .numberOfLikes{
+    align-self: center;
+    font-size: 13px;
+    margin-left: 5px;
+  }
+  .heart{
+    padding: 3px;
+  }
+  .likes:hover > .heart{
+    border-radius: 30px;
+    color: #F91880;
+    background-color: #F7E0EB;
+  }
+  .likes:hover > .numberOfLikes{
+    color : #F91880;
+  }

@@ -7,6 +7,11 @@ function Tweetbox() {
     const[tweetImage , setTweetImage] = useState("");
 const sendTweet = (e) => {
     e.preventDefault();
+    if(tweetMessage ==="")
+    {
+        return;
+    }
+
     db.collection("posts").add({
       displayName: "Cristiano Ronaldo",
       username: "Cristiano",
@@ -15,7 +20,8 @@ const sendTweet = (e) => {
       image: tweetImage,
       avatar:
         "https://pbs.twimg.com/profile_images/1157313327867092993/a09TxL_1_400x400.jpg",
-      date : new Date().getTime() / 1000
+      date : new Date().getTime() / 1000, 
+      likes : 0
     });
 
     setTweetMessage("");
