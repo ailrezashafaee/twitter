@@ -22,9 +22,9 @@ function Feed() {
             </div>
             <Tweetbox/>
             <FlipMove>
-                {posts.map((post) => (
+                {posts.sort((a , b)=>{return b.date - a.date}).map((post) => (
                     <Post
-                    key={post.text}
+                    key={post.date}
                     displayName={post.displayName}
                     username={post.username}
                     verified={post.verified}

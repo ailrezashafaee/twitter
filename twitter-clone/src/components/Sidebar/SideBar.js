@@ -24,7 +24,7 @@ function SideBar() {
             <div className="sidebarBtnContainer">   
                 <Button variant="outlined" className="sidebarBtn">Tweet</Button>
             </div>
-            <SidebarProfileInf src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" name="alireza shafaee" username="alireza"/>
+            <SidebarProfileInf src="https://pbs.twimg.com/profile_images/1157313327867092993/a09TxL_1_400x400.jpg" name="alireza shafaee" username="alireza"/>
         </div>
     )
 }

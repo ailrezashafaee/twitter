@@ -29,7 +29,7 @@ const Post = forwardRef(
               <p>{text}</p>
             </div>
           </div>
-          <div className="postImage">  
+          <div className={['postImage' , image ? '' : "dis"].join("")}>  
             <img src={image}  alt="" />
           </div>
           <div className="post__footer">

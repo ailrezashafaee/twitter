@@ -48,3 +48,30 @@ body{
      display: none !important;
  }
 }
+@media screen and (max-width:1000px)
+{
+    .sideBar{
+        flex: 8.5 !important;
+    }   
+    .feed{
+        flex: 91.5 !important;
+    }
+    .widget{
+        flex:0 !important;
+        display: none !important;
+    }
+}
+@media screen and (max-width:700px)
+{
+    .sideBar{
+        flex: 10 !important;
+        height: 100% !important;
+    }   
+    .feed{
+        flex: 90 !important;
+    }
+    .widget{
+        flex:0 !important;
+        display: none !important;
+    }
+}
