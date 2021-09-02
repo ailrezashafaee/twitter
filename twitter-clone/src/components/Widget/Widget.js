@@ -18,20 +18,13 @@ function Widget() {
 
             <div className="widget__container">
                 <h2>What's happening</h2>
-                <TwitterTweetEmbed tweetId={"1432251744508014592"}/>
-
-            </div>
-            <div className="widget__container2">
-                <div>
-                    <TwitterTimelineEmbed className="hi2"
+                <TwitterTimelineEmbed className="hi2"
                         sourceType="profile"
                         screenName="Cristiano"
                         options={{height: 400}}
                     />
-                </div>
 
             </div>
-
         </div>
     )
 }
