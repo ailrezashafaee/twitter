@@ -1,7 +1,8 @@
 .feed{
     flex: 0.48;
     border-right: 1px solid var(--twitter-background);
-    overflow-y: scroll;                                                                                                     
+    overflow-y: scroll;       
+    height: 160vh;                                                                                              
 }
 .feed::-webkit-scrollbar {
     display: none;
